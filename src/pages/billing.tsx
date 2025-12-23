@@ -24,7 +24,7 @@ export default function BillingPage() {
   }
 
   async function handleExport() {
-    const res = await fetch('/api/admin/billing/export', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({}) });
+    const res = await fetch('https://bigtechapi.squareweb.app/api/admin/billing/export', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({}) });
     const data = await res.json();
     alert(`Export job submitted: ${data.jobId}`);
   }

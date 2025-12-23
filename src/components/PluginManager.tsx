@@ -69,7 +69,7 @@ export default function PluginManager() {
 
   const loadAvailablePlugins = async () => {
     try {
-      const res = await fetch('/api/plugins');
+      const res = await fetch('https://bigtechapi.squareweb.app/api/plugins');
       if (!res.ok) throw new Error('Failed to load available plugins');
       const data = await res.json();
       setAvailablePlugins(data.plugins || []);

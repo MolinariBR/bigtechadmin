@@ -28,7 +28,7 @@ export default function TenantsPage() {
   const loadTenants = async () => {
     try {
       setLoading(true);
-      const res = await fetch('/api/admin/tenants');
+      const res = await fetch('https://bigtechapi.squareweb.app/api/admin/tenants');
       if (!res.ok) throw new Error('Failed to load tenants');
       const data = await res.json();
       setTenants(data.tenants || []);

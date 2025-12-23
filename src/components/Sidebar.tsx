@@ -36,7 +36,7 @@ export default function Sidebar({ isOpen = true, onClose }: SidebarProps) {
     (async () => {
       try {
         const token = typeof window !== 'undefined' ? localStorage.getItem('accessToken') : null;
-        await fetch('/api/auth/logout', {
+        await fetch('https://bigtechapi.squareweb.app/api/auth/logout', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
