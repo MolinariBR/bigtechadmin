@@ -1,5 +1,5 @@
 MAIN=next.config.js
-MEMORY=2048
+MEMORY=4096
 VERSION=recommended
 DISPLAY_NAME=BigTech Admin
 DESCRIPTION=Admin panel for BigTech application
